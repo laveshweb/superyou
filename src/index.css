@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@theme {
+  --font-body: "Inter", sans-serif;
+  --font-accent: "Caveat", sans-serif;
+  --color-beige: #F5F0E4;
+  --color-black: #2c2c2c;
+  --color-brown: #571F01;
+  --color-orange: #FF6B57;
+  --color-blue: #489CD3;
+  --color-yellow: #FDD326;
+  --color-green: #9D9C3D;
+}
+
+@layer base {
+  body {
+    @apply bg-beige text-black font-body text-lg overflow-x-clip;
+  }
+  h2 {
+    @apply font-semibold text-7xl;
+  }
+}
+
+@layer components {
+  .inner-container {
+    @apply px-4 sm:px-8 md:px-10 lg:px-28;
+  }
+  img {
+    width: 100%;
+  }
+}
